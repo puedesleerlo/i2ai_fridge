@@ -1,0 +1,8 @@
+# Named tunnel for this project only (leaves ~/.cloudflared/config.yml, used by ep-viz, untouched).
+# Always pass --config cloudflared.yml, otherwise cloudflared falls back to the global config's tunnel.
+tunnel: 34cd45e4-d98e-4445-a405-e98960cd06ba
+credentials-file: /Users/atabaresa/.cloudflared/34cd45e4-d98e-4445-a405-e98960cd06ba.json
+ingress:
+  - hostname: intro-fridge.bottomuplabs.com
+    service: http://localhost:8811
+  - service: http_status:404

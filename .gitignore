@@ -1,0 +1,10 @@
+# Client data and derived outputs — never publish
+*.xlsx
+*.docx
+*.pdf
+scope/
+cache/
+output/
+.env
+__pycache__/
+.DS_Store
